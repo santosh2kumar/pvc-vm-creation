@@ -1,14 +1,13 @@
-# Two-zone Virtual Private Cloud
+# Virtual Private Cloud
 
-With this template, you can use IBM Cloud Schematics to create two virtual private clouds (VPCs) in two separate zones of your IBM Cloud account. Schematics uses [Terraform](https://www.terraform.io/) as the infrastructure-as-code engine. With this template, you can create and manage infrastructure as a single unit as follows. For more information about how to use this template, see the [IBM Cloud Schematics documentation](https://cloud.ibm.com/docs/schematics).
+With this template, you can use IBM Cloud Schematics to create virtual private cloud (VPC) in your IBM Cloud account. Schematics uses [Terraform](https://www.terraform.io/) as the infrastructure-as-code engine. With this template, you can create and manage infrastructure as a single unit as follows. For more information about how to use this template, see the [IBM Cloud Schematics documentation](https://cloud.ibm.com/docs/schematics).
 
 **Included**:
-* 2 [virtual private cloud](https://cloud.ibm.com/docs/vpc-on-classic?topic=vpc-on-classic-getting-started) instances, in separate zones.
+* 1 [virtual private cloud](https://cloud.ibm.com/docs/vpc-on-classic?topic=vpc-on-classic-getting-started) instances, in separate zones.
 * 1 [VPC virtual servers](https://cloud.ibm.com/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-getting-started) instances per zone. The virtual servers include an NGINX load balancer.
 
 **Not included**:
 * No VPC load balancers are created to expose workloads in the virtual servers on the public network.
-* No global load balancer is provisioned to manage traffic across the 2 VPC instances.
 
 ## Costs
 
