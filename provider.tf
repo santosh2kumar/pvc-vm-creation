@@ -9,6 +9,3 @@ provider "ibm" {
   generation = "1"
 }
 
-provider "ibm" {
-  ibmcloud_api_key   = "${var.ibmcloud_api_key}"
-}
