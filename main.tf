@@ -8,7 +8,7 @@ locals {
        }
 
 
-resource "ibm_is_vpc" "santosh-terraform" {
+resource "ibm_is_vpc" "vpc1" {
   name = "vpc-${random_id.name1.hex}"
 }
 
