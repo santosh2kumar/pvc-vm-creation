@@ -55,8 +55,7 @@ resource "ibm_is_instance" "instance1" {
   vpc       = "${ibm_is_vpc.vpc1.id}"
   zone      = "${local.ZONE1}"
   keys      = ["${ibm_is_ssh_key.sshkey.id}"]
-  user_data = "${file("nginx.sh")}"
-}
+  }
 
 resource "ibm_is_floating_ip" "floatingip1" {
   name   = "fip-${random_id.name1.hex}"
