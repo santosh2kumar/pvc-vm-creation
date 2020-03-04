@@ -35,7 +35,6 @@ resource "ibm_is_vpn_gateway_connection" "VPNGatewayConnection1" {
   peer_address  = "${ibm_is_vpn_gateway.VPNGateway1.public_ip_address}"
   preshared_key = "VPNDemoPassword"
   local_cidrs   = ["${ibm_is_subnet.subnet1.ipv4_cidr_block}"]
-  ipsec_policy  = "${ibm_is_ipsec_policy.example.id}"
 }
 
 resource "ibm_is_ssh_key" "sshkey" {
