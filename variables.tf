@@ -18,6 +18,6 @@ variable "profile" {
   description = "The profile of compute CPU and memory resources that you want your VPC virtual servers to have. To list available profiles, run `ibmcloud is instance-profiles`."
 }
 
-variable "ibm" {
+provider "ibm" {
   ibmcloud_api_key   = "${var.ibmcloud_api_key}"
 }
